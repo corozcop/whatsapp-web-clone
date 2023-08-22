@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Web Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+        .chat-list {
+            background-color: #128C7E;
+        }
+        .chat-window {
+            background-color: #F8F9FA;
+        }
+        .chat-messages {
+            color: #333333;
+        }
+        .chat-input input {
+            border: 1px solid #DADADA;
+        }
+        .send-button {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="flex flex-col md:flex-row h-screen">
+        <div class="md:w-1/4 bg-white border-r border-gray-200">
+            <header class="px-6 py-4 border-b border-gray-200">
+                <!-- Header content -->
+                <h1 class="text-2xl font-semibold text-gray-800">Chats</h1>
+            </header>
+            <div class="px-6 py-4">
+                <!-- List of chats (dummy data) -->
+                <ul class="space-y-4">
+                    <li class="flex items-center space-x-2">
+                        <img src="https://picsum.photos/200/300" alt="Profile 1" class="w-10 h-10 rounded-full">
+                        <div class="text-sm font-semibold text-gray-800">John Doe</div>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <img src="https://picsum.photos/200/300" alt="Profile 2" class="w-10 h-10 rounded-full">
+                        <div class="text-sm font-semibold text-gray-800">Jane Smith</div>
+                    </li>
+                    <!-- Add more chat contacts here -->
+                </ul>
+            </div>
+        </div>
+        <div class="flex-1 bg-gray-200 p-2">
+            <div class="flex-1 p-2 md:p-6">
+                <div class="flex-1 bg-white rounded-lg shadow-md p-2 mb-4">
+                    <!-- Selected chat messages (dummy data) -->
+                    <div class="mb-4 chat-messages">
+                        <div class="flex items-start space-x-2 mb-2">
+                            <img src="https://picsum.photos/200/300" alt="Profile 1" class="w-8 h-8 rounded-full">
+                            <div class="bg-gray-100 rounded-lg p-2">
+                                <p class="text-sm">Hey there! How are you?</p>
+                                <span class="text-xs text-gray-500">10:30 AM</span>
+                            </div>
+                        </div>
+                        <div class="flex items-end space-x-2 justify-end mb-2">
+                            <div class="bg-green-500 rounded-lg p-2">
+                                <p class="text-sm text-white">I'm doing great, thanks!</p>
+                                <span class="text-xs text-white">10:32 AM</span>
+                            </div>
+                            <img src="https://picsum.photos/200/300" alt="Profile 2" class="w-8 h-8 rounded-full">
+                        </div>
+                        <!-- Add more chat messages here -->
+                    </div>
+                    <div class="flex items-center chat-input">
+                    <input type="text" placeholder="Type a message..." class="flex-1 py-2 px-4 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500">
+                    <button class="ml-2 py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 send-button">Send</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
